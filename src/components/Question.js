@@ -136,7 +136,7 @@ function Questions({ questions }) {
         </DialogTitle>
         <DialogContent>
           <DialogContentText textAlign="center">
-            You answerd {(correctAnswer / questions.length) * 100}%
+            You answerd {Math.trunc((correctAnswer / questions.length) * 100)}%
           </DialogContentText>
         </DialogContent>
         <DialogActions>
