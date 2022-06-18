@@ -93,7 +93,7 @@ function Questions({ questions }) {
             ...questions[currentQuestion].incorrect_answers,
             questions[currentQuestion].correct_answer,
           ]).map((answer, index) => (
-            <MyListItem
+            <ListItem
               disablePadding
               key={index}
               sx={{ backgroundColor: '#85C6FC', marginBottom: '1rem' }}
@@ -104,7 +104,7 @@ function Questions({ questions }) {
                   sx={{ textAlign: 'center' }}
                 />
               </ListItemButton>
-            </MyListItem>
+            </ListItem>
           ))}
         </List>
         <Box ml="auto" width="50%">
